@@ -1,10 +1,21 @@
 {% extends 'base.html'%}
 {%block content%}
-<div style="color: black;">
+<div style="color: rgb(5, 4, 4);">
 <h1>All About Molly</h1>
 
+<ul>
+  {% for post in object_list %}
+    <li><a href="{% url 'articleDetail' post.pk}">{{ post.title }}</a> <br/>
+    {{ post.author.first_name }} {{ post.author.last_name }} <br/>
+    {{ post.body }}</li>
+{%endfor%}
+</ul>
 
-<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+
+
+{%endblock%}
+
+<!-- <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -29,13 +40,5 @@
       <span class="carousel-control-next-icon" aria-hidden="false"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-
-<ul>
-  {% for post in object_list %}
-    <li>{{ post.title }} -
-    {{ post.author }} <br/>
-    {{ post.body }}</li>
-{%endblock%}
-</ul>
+  </div> -->
 

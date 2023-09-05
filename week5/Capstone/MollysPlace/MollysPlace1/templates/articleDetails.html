@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+           
+        
+<!-- {%block content%}
+
+<div style="color: black;">
+<h1>How The ADA Defines a Disability</h1>
+</div>
+
+{%endblock%} -->
+
+<h1>{{ post.title }}</h1><br/>
+<small>By: {{post.author.first_name}} {{post.author.last_name}} </small><hr><br/>
+{{ post.body }}
+
+<br/><br/>
+<a href="{%url 'home'%}" class="btn btn-dark">Back</a>
+
+{% endblock %}
