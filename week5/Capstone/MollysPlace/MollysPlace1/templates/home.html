@@ -1,8 +1,13 @@
 {% extends 'base.html'%}
 {%block content%}
-<div style="color: rgb(5, 4, 4);">
 <h1>All About Molly</h1>
+<!-- <div class="img">
+  <img class="mollyImage" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/375539593_6754818927894385_7810303725916623535_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_ohc=KqJKpZer1b0AX9rso5w&_nc_ht=scontent-sjc3-1.xx&oh=00_AfDFOpDAqEbmbDfdFDckZ5WeAzp9P6cKv_mLH1BurLkBuw&oe=64FAAB41" alt="molly black and white">
+</div> -->
+<div style="color: rgb(5, 4, 4);">
 
+
+<br/>
 <ul>
   {% for post in object_list %}
     <li><a href="{% url 'articleDetail' post.pk}">{{ post.title }}</a> <br/>
@@ -22,9 +27,7 @@
       <li data-target="#carouselIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="mollyImage" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/375539593_6754818927894385_7810303725916623535_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_ohc=KqJKpZer1b0AX9rso5w&_nc_ht=scontent-sjc3-1.xx&oh=00_AfDFOpDAqEbmbDfdFDckZ5WeAzp9P6cKv_mLH1BurLkBuw&oe=64FAAB41" alt="molly black and white" width="700" height="300"" alt="First slide">
-      </div>
+      
       <div class="carousel-item">
         <img class="mollyImage" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/373486491_6754819024561042_8742645248599102009_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=49d041&_nc_ohc=guo66gb30jIAX-qegtb&_nc_ht=scontent-sjc3-1.xx&oh=00_AfDpO5RJ3GdpUk04Bwf5B6aXlW3fQTO3YVbwc6yJqUFIVQ&oe=64FB1D0B" alt="molly on porch" width="600" height="300" alt="Second slide">
       </div>

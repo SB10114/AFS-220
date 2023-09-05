@@ -3,3 +3,9 @@ h1 {
     color: blue;
 }
 
+#mollyImage {
+    padding-right: 300px;
+    margin-right:0px; 
+    width: 100px;; 
+    height: 100px;;
+}
