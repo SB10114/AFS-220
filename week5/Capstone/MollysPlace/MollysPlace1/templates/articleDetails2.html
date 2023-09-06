@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
 {%block content%}
 
-<div style="color: black;">
-<h1>Service Dogs vs Therapy Dogs</h1>
-</div>
+<h1>Service dogs vs Therapy dogs</h1>
+
+<h1>{{ post.title }}</h1><br/>
+<small>By: {{post.author.first_name}} {{post.author.last_name}}</small><hr><br/>
+{{ post.body }}
+
+<br/><br/>
+<a href="{%url 'home'%}" class="btn btn-dark">Back</a>
+
+
 {%endblock%}

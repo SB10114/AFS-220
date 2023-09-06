@@ -3,5 +3,14 @@
 <div style="color: black;">
 <h1>Frequently Asked Questions</h1>
 </div>
+
+<h1>{{ post.title }}</h1><br/>
+<small>By: {{post.author.first_name}} {{post.author.last_name}}</small><hr><br/>
+{{ post.body }}
+
+<br/><br/>
+<a href="{%url 'home'%}" class="btn btn-dark">Back</a>
+
+
 {%endblock%}
 
