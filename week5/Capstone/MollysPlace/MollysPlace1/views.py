@@ -17,7 +17,22 @@ class AddPostView(CreateView):
     form_class = PostForm
     template_name = 'add_post.html'
 
-# class Blog1View(CreateView):
-#     model = Post
-#     form_class = PostForm
-#     template_name = 'articleDetail.html'
+class Blog1View(CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'articleDetails2.html'
+
+class Blog2View(CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'articleDetails3.html'
+
+class Blog3View(CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'articleDetails4.html'
+
+class Blog4View(CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'allAboutMolly.html'

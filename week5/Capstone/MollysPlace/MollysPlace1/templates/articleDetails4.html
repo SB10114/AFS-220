@@ -1,13 +1,26 @@
 {% extends 'base.html' %}
 {%block content%}
 <div style="color: black;">
-<h1>Frequently Asked Questions</h1>
+<h1>11 Facts about service dogs</h1>
 </div>
 
 <h1>{{ post.title }}</h1><br/>
-<small>By: {{post.author.first_name}} {{post.author.last_name}}</small><hr><br/>
+<small>By: {{'Sierra'}} {{'Butler'}}</small><hr><br/>
 {{ post.body }}
 
+<ol>
+    <li>Dogs have been helping combat veterans since the civil war</li>
+    <li>The first school for service dog’s dates back over 100 years to the early 1900’s</li>
+    <li>Service dogs weren’t federally recognized in America until the 1990’s</li>
+    <li>The law differentiates service dogs as “working animals” not as mere pets</li>
+    <li>With the state based exception of pit bulls, any dog with the right temperament can become a service dog</li>
+    <li>Service dogs can differentiate between play time and work time</li>
+    <li>In most states, interfering with a service dog's work or attempting to harm them is a misdemeanor. This crime is punishable by hefty fines and jail time and, if convicted, offenders may be subject to restitution, vet bills, and replacement fees</li>
+    <li>It takes an average of 18-24 months to train a service dog</li>
+    <li>Due to the level of skills needed, training a service dog can get expensive. Some handlers spend an average of $25,000 or more on training services. And service dogs themselves don't come cheap. A fully trained service dog can cost at least $15,000</li>
+    <li>Not all dogs in vests are service dogs, ESA’s are known to wear them as well as ordinary pups.</li>
+    <li>The ADA does not require service dogs to be professionally trained</li>
+</ol>
 <br/><br/>
 <a href="{%url 'home'%}" class="btn btn-dark">Back</a>
 

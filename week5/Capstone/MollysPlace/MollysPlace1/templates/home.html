@@ -1,6 +1,6 @@
 {% extends 'base.html'%}
 {%block content%}
-<h1>All About Molly</h1>
+<h1>Photos</h1>
 <!-- <div class="img">
   <img class="mollyImage" src="https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/375539593_6754818927894385_7810303725916623535_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=49d041&_nc_ohc=KqJKpZer1b0AX9rso5w&_nc_ht=scontent-sjc3-1.xx&oh=00_AfDFOpDAqEbmbDfdFDckZ5WeAzp9P6cKv_mLH1BurLkBuw&oe=64FAAB41" alt="molly black and white" height:'300px' width:'300px'>
 </div> -->
@@ -8,12 +8,6 @@
 
 
 <br/>
-<ul>
-  {% for post in object_list %}
-    <li><a href="{% url 'articleDetail' post.pk %}">{{ post.title }} </a> <br/>
-      {{ post.author.first_name }} {{ post.author.last_name }} <br/>
-    {{ post.body }}</li>
-{%endfor%}
-</ul>
+
 
 {%endblock%}

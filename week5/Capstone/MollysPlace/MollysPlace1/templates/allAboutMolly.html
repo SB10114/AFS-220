@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%block content%}
+
+<h1>All About Molly</h1>
+
+<h1>{{ post.title }}</h1><br/>
+<small>By: {{'Sierra'}} {{'Butler'}}</small><hr><br/>
+{{ post.body }}
+
+
+<p>I began looking for a service dog when I became disabled in 2020 shortly after the start of COVID. I had always wanted a Golden Retriever ever since seeing “Air Bud” in the 90’s. After my previous service dog “washed out,” I began the search for a suitable replacement to train for my various needs.  I was led to “puppies.com” by my trainer, Meredith. 
+    After a few hours of searching, I found a pair of sisters, one red and one blonde, who were in my price range. I then had to go into the hospital for a week, so I thought I had missed out on my chance to get either of them. Unbeknownst to me, my then spouse was in contact with the breeder and picked the blonde. When I got out of the hospital my spouse drove me two and a half hours for a “surprise.” 
+    Molly is a 2-year-old pure bred Golden Retriever. She was my birthday present in March of 2022. Molly and I formed a close bond Very quickly. She is highly intelligent and, when we were adamantly training, she was learning an average of 2 commands every week. She knows a total of 22 different commands, be it tasks or tricks. The difference between a task and a trick is that a task is something meant to aid the disabled person in their day-to-day life, and a trick is meant for entertainment. 
+    While we have taken Small hiatus from training, Molly continues to perform her major tasks and some of her tricks for me. When we get back to training, I hope to have her certified through Canine Good Citizen (CGC). I hope to get her basic certifications stating that she's a good girl, and that she's trained to be in public around people and other dogs.
+    </p>
+
+<br/><br/>
+<a href="{%url 'home'%}" class="btn btn-dark">Back</a>
+
+
+{%endblock%}
